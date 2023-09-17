@@ -17,13 +17,10 @@
             gap: 0.5rem;
         }
         .nav-link {
-            color: $black-color !important;
             font-weight: 500 !important;
             font-size: 16px !important;
             padding: 5px 0 !important;
-            // border-bottom: 2px solid transparent;
             &.active {
-                // border-bottom-color: $main-color;
                 color: $main-color !important;
             }
         }
@@ -35,10 +32,18 @@
         li {
             .circle-link {
                 @include flex-center;
-                @include circle(35px);
+                @include circle(33px);
                 border: 0.5px solid $main-color;
+                transition: $sm-transition;
                 i,svg {
                     color: $main-color;
+                    transition: $sm-transition;
+                }
+                &:hover {
+                    background-color: $main-color;
+                    i,svg {
+                        color: $white;
+                    }
                 }
             }
         }

@@ -1,19 +1,17 @@
 .main-btn {
-  background-color: $white;
-  color: $main-color;
-  border: 1px solid $main-color;
-  font-weight: 500;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  line-height: 26px;
+  @include flex-center;
   gap: 5px;
+  width: fit-content;
+  padding: 7px 17px;
   border-radius: 4px;
-  padding: 6px 16px;
-  &.color {
-    background-color: $main-color;
+  border: 1px solid $main-color;
+  font-size: 13px;
+  font-weight: 500;
+  color: $white;
+  background-color: $main-color;
+  transition: $main-transition;
+  &:hover {
+    background-color: $main-color-light;
     color: $white;
   }
 }

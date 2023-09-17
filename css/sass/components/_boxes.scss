@@ -10,3 +10,27 @@
     height: 76px;
   }
 }
+
+.box-img-text {
+  text-align: center;
+  .img-holder {
+    img {
+      width: 280px;
+      max-width: 100%;
+    }
+  }
+  .text-content {
+    .title {
+      color: $main-color;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 1.5em;
+      margin-bottom: 15px;
+    }
+    .des {
+      font-size: 18px;
+      line-height: 1.5em;
+      color: #65798c;
+    }
+  }
+}

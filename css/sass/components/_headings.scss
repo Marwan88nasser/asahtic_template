@@ -1,0 +1,17 @@
+.heading-line {
+  position: relative;
+  font-size: 23px;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+  padding-bottom: 14px;
+  &::before {
+    content: "";
+    background-color: $main-color;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 75%;
+    height: 2px;
+    border-radius: 50px;
+  }
+}

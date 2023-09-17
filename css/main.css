@@ -61,24 +61,43 @@
 }
 
 .main-btn {
-  background-color: white;
-  color: #481C7D;
-  border: 1px solid #481C7D;
-  font-weight: 500;
-  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   width: -moz-fit-content;
   width: fit-content;
-  line-height: 26px;
-  gap: 5px;
+  padding: 7px 17px;
   border-radius: 4px;
-  padding: 6px 16px;
-}
-.main-btn.color {
-  background-color: #481C7D;
+  border: 1px solid #481C7D;
+  font-size: 13px;
+  font-weight: 500;
   color: white;
+  background-color: #481C7D;
+  transition: 0.4s;
+}
+.main-btn:hover {
+  background-color: #5b239f;
+  color: white;
+}
+
+.heading-line {
+  position: relative;
+  font-size: 23px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+  padding-bottom: 14px;
+}
+.heading-line::before {
+  content: "";
+  background-color: #481C7D;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 75%;
+  height: 2px;
+  border-radius: 50px;
 }
 
 .box-landing {
@@ -92,6 +111,26 @@
 }
 .box-landing.box-landing-sm {
   height: 76px;
+}
+
+.box-img-text {
+  text-align: center;
+}
+.box-img-text .img-holder img {
+  width: 280px;
+  max-width: 100%;
+}
+.box-img-text .text-content .title {
+  color: #481C7D;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+.box-img-text .text-content .des {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #65798c;
 }
 
 * {
@@ -136,6 +175,10 @@ select:focus {
   outline: none;
 }
 
+.holder-content {
+  min-height: calc(100vh - 86px - 259px);
+}
+
 .bottom-nav {
   background-color: white;
   color: #000000;
@@ -157,7 +200,6 @@ select:focus {
   }
 }
 .bottom-nav .navbar-nav .nav-link {
-  color: #000000 !important;
   font-weight: 500 !important;
   font-size: 16px !important;
   padding: 5px 0 !important;
@@ -174,13 +216,21 @@ select:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
   border: 0.5px solid #481C7D;
+  transition: 0.3s;
 }
 .bottom-nav .social-bar li .circle-link i, .bottom-nav .social-bar li .circle-link svg {
   color: #481C7D;
+  transition: 0.3s;
+}
+.bottom-nav .social-bar li .circle-link:hover {
+  background-color: #481C7D;
+}
+.bottom-nav .social-bar li .circle-link:hover i, .bottom-nav .social-bar li .circle-link:hover svg {
+  color: white;
 }
 
 .footer {

@@ -29,3 +29,7 @@ input:focus,
 select:focus {
   outline: none;
 }
+
+.holder-content {
+  min-height: calc(100vh - 86px - 259px);
+}

@@ -1,0 +1,12 @@
+.box-landing {
+  width: 100%;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  height: 162px;
+  &.box-landing-md {
+    height: 119px;
+  }
+  &.box-landing-sm {
+    height: 76px;
+  }
+}
